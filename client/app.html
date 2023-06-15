@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="img"></div>
+    <div class="form">
+        <h1 style="text-align: center; margin-bottom: 30px;">House Price Prediction</h1>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <h2>Square Meters</h2>
+                <input type="number" id="uiSquareMeters" name="squareMeters" value="100">
+            </div>
+
+            <div class="form-group">
+                <h2>Number of Rooms</h2>
+                <input type="number" id="uiNumberOfRooms" name="numberOfRooms" value="3">
+            </div>
+
+            <div class="form-group">
+                <h2>Floors</h2>
+                <input type="number" id="uiFloors" name="floors" min="1" value="1">
+            </div>
+
+            <div class="form-group">
+                <h2>House Age (years)</h2>
+                <input type="number" id="uiHouseAge" name="HouseAge" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <h2>City Code</h2>
+                <input type="text" id="uiCityCode" name="cityCode">
+            </div>
+
+            <div class="form-group">
+                <h2>City Part Range</h2>
+                <input type="text" id="uiCityPartRange" name="cityPartRange">
+            </div>
+
+            <div class="form-group">
+                <h2>Previous Owners</h2>
+                <input type="number" id="uiNumPrevOwners" name="numPrevOwners" min="0" value="0">
+            </div>
+
+            <div class="form-group">
+                <h2>Storm Protector</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiHasStormProtector" name="hasStormProtector">
+                    <label for="uiHasStormProtector">Yes</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <h2>Yard</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiHasYard" name="hasYard">
+                    <label for="uiHasYard">Yes</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Pool</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiHasPool" name="hasPool">
+                    <label for="uiHasPool">Yes</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Basement</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiBasement" name="basement">
+                    <label for="uiBasement">Yes</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Attic</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiAttic" name="attic">
+                    <label for="uiAttic">Yes</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <h2>Garage</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiGarage" name="garage">
+                    <label for="uiGarage">Yes</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Storage Room</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiHasStorageRoom" name="hasStorageRoom">
+                    <label for="uiHasStorageRoom">Yes</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Guest Room</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uiHasGuestRoom" name="hasGuestRoom">
+                    <label for="uiHasGuestRoom">Yes</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit-section">
+            <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+            <div id="uiEstimatedPrice" class="result">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
