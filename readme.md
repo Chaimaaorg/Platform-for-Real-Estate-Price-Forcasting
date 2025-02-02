@@ -121,24 +121,3 @@ The prediction model is trained on Paris real estate data and considers the foll
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
-
-## License
-[Add your license information here]
-
-## Authors
-[Add author information here]
-
-## Acknowledgments
-- [Add acknowledgments here]
-```
-
-This README provides:
-1. Clear overview of the application
-2. Installation instructions
-3. Usage guidelines
-4. Technical details
-5. API documentation
-6. Project structure
-7. Contributing guidelines
-
-Would you like me to add or modify any section?
